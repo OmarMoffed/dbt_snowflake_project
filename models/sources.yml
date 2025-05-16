@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: snowflake_raw_data   # source name used in jinja files
+    description: This is the source for the raw data in snowflake
+    database: finance_db        # snowflake database name
+    schema: raw                # snowflake raw data schema name
+    tables:
+      - name: customers
+      - name: order_items
+      - name: orders
+      - name: products

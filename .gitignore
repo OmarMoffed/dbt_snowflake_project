@@ -1,0 +1,14 @@
+#Don't upload to git platform any files from the below
+target/
+dbt_packages/
+logs/
+*.log
+
+#Don't upload to git platform any files from the below python environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.dbt/

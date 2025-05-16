@@ -1,0 +1,22 @@
+[sqlfluff]
+# Set the SQL dialect to Snowflake
+dialect = snowflake
+
+[sqlfluff:rules]
+exclude_rules = L016  # Disable line length rule (no more "line too long" warnings)
+
+# Force all column names to be in snake_case (e.g., customer_id)
+column_naming_style = snake_case
+
+# Force all Common Table Expression (CTE) names to be in snake_case
+cte_naming_style = snake_case
+
+# Enforce consistent style for aliases (e.g., always lowercase or consistent casing)
+alias_naming_style = consistent
+
+# Force all table names to be in snake_case
+table_naming_style = snake_case
+
+[sqlfluff:rules:capitalisation.keywords]
+# Enforce all SQL keywords (e.g., SELECT, FROM, WHERE) to be in UPPERCASE
+capitalisation_policy = upper
